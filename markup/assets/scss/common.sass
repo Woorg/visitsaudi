@@ -1,0 +1,60 @@
+html,
+body
+  height: 100%
+
+.page
+  // position: relative
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  color: $black
+  font-family: $g
+  font-weight: 300 
+  font-display: swap
+  
+  &__inner
+    flex-grow: 1
+    flex-shrink: 0
+    flex-basis: auto
+    overflow: hidden
+
+
+
+.container
+  margin: auto
+  padding-right: 15px
+  padding-left: 15px
+  width: 100%
+  max-width: 1230px
+
+
+.container_full
+  padding-right: 10px
+  padding-left: 10px
+  max-width: 100%
+  
+  +mq($small)
+    padding-right: 15px
+    padding-left: 15px
+
+  +mq($medium)
+    padding-right: 30px  
+    padding-left: 30px
+  
+
+  +mq($large)
+    padding-right: 50px
+    padding-left: 50px
+    
+  +mq($xlarge)
+    padding-right: 200px
+    padding-left: 200px
+
+
+img
+  max-width: 100%
+  height: auto
+
+
+
+

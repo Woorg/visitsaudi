@@ -1,0 +1,34 @@
+mixin calc(data)
+    section.calc
+        .calc__in.in
+            .calc__w
+                h2.calc__title Расчет госпошлины
+                .calc__form.form
+                    form(method='post')
+                        .form__row
+                            .form__col
+                                .form__field.form__field_range-input
+                                    .form__label Введите стоимость автомобиля:
+                                        input.form__input.form__input_range(type="text", value="1300000" min="20000" max="5000000" step="5000")
+
+                                .form__field.form__field_range.range-slider
+                                    input.form__range.js-range-slider(type="text", value="")
+
+                            .form__col
+                                 .form__field.form__field_checkbox
+                                    label.form__label 
+                                        input.form__checkbox(type="checkbox", value="" checked)
+                                        span.form__label-text Наследник - ближайший родственник
+
+                            .calc__result
+                                .calc__result-title Размер пошлины
+                                .calc__result-val
+                                    span.calc__result-price 900
+                                    span.calc__result-rub руб
+
+                ul.calc__list
+                    li.calc__item Размер госпошлины (нотариального тарифа) для ближайших родственников: супруга, родителей и детей составляет 0,3% от стоимости автомобиля, для остальных - 0,6%.
+                    li.calc__item Если в наследство вступают несколько наследников одновременно, пошлина уплачивается каждым наследником
+                            
+
+

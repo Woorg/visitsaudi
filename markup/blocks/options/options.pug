@@ -1,0 +1,253 @@
+mixin options(data)
+    section.options
+        .options__in.in
+            h2.options__title.title.title_h2 Варианты оценок
+            .options__text Выберите вариант <span>А</span> или <span>Б</span>, который подойдет вам:
+
+            .options__w.options__w_first
+                .options__option
+                    .options__option-title Вариант А:
+                    .options__option-text Без осмотра автомобиля
+
+                    .options__list-title Подходит вам если:
+                    ul.options__list
+                        li.options__list-item в наследство вступает 1 наследник. 
+                        li.options__list-item нет спора о стоимости наследства. 
+                        li.options__list-item оценка проводится только для определения размера нотариальной пошлины
+
+            
+                .options__form.form
+
+                    form(action="", method="post")
+
+                    .options__form-title Количество транспортных средств для оценки:
+                    .form__row.form__row_radio
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="1" name='cars_number' checked)
+                                .form__label-text 1
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="2" name='cars_number')
+                                .form__label-text 2
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="3" name='cars_number')
+                                .form__label-text 3
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="4" name='cars_number')
+                                .form__label-text 4
+                
+                    .options__form-bottom
+                        .options__price-title Цена отчета об оценке:
+                        .options__price 1 500 
+                            span руб
+
+                        .options__deliv
+                            .options__deliv-title Доставка по Москве:
+                            .options__deliv-val 200 
+                                span руб
+                        .options__time
+                            .options__time-title Срок изготовления:
+                            .options__time-val 20 
+                                span минут
+
+                        input.form__submit.button(type="submit", value="заказать оценку")
+
+
+
+            .options__home
+
+                h3.options__home-title Получите оценку, не выходя из дома
+
+                ul.options__steps
+
+                    li.options__step
+
+                        .options__step-title Отправьте нам фотографии документов:
+                
+                        ol.options__step-list
+                            li.options__step-item 
+                               b Свидетельство о смерти
+                               span Оценка производится на дату смерти
+                            li.options__step-item 
+                                b Паспорт транспортного средства 
+                                span 2 стороны
+
+                            li.options__step-item 
+                                b Свидетельство о регистрации транспортного средства 
+                                span 2 стороны
+
+                            li.options__step-item 
+                                b Гражданский паспорт наследника 
+                                span Разворот и прописка. Для заключения договора.
+
+                    li.options__step
+
+                        .options__step-title Выберите способ:
+
+                        .options__step-buttons
+                            a.options__step-button(href="//api.whatsapp.com/send?phone=79234567890")
+                                img.options__step-icon(src="assets/images/general/whatsup-icon.png", alt="")
+                                .options__step-text Отправить 
+                                    span по WhatsApp
+                                .options__step-phone +7(926)-015-68-19                         
+
+                            a.options__step-button(href="viber://chat?number=79260156819")
+                                img.options__step-icon(src="assets/images/general/viber-icon.png", alt="")
+                                .options__step-text Отправить 
+                                    span по Viber
+                                .options__step-phone +7(926)-015-68-19
+
+                            a.options__step-button(href="#")
+                                img.options__step-icon(src="assets/images/general/upload-icon.png", alt="")
+                                .options__step-text Загрузить 
+
+
+
+
+                    li.options__step
+
+                        .options__step-title Документы об оценке будут готовы через 20 минут.
+
+                        .options__step-text Заберите в офисе или закажите доставку      
+
+
+            .options__how
+                .options__how-title Как проводится оценка без осмотра автомобиля:
+
+                ul.options__how-list
+
+
+                    li.options__how-item
+
+                        img.options__how-icon(src="assets/images/general/send-icon.png", alt="")
+
+                        .options__how-itemtitle Передайте документы
+
+                        .options__how-text Передайте нам документы или  
+                            a(href="") отправьте их фотографии
+
+
+
+                    li.options__how-item
+
+                        img.options__how-icon(src="assets/images/general/time-icon.png", alt="")
+            
+                        .options__how-itemtitle Подождите 20 минут
+
+                        .options__how-text Через 20 минут отчет будет готов
+
+                    li.options__how-item
+
+                        img.options__how-icon(src="assets/images/general/price-icon.png", alt="")
+
+                        .options__how-itemtitle Получите отчёт
+
+                        .options__how-text Заберите готовый отчет об оценке в офисе или 
+                            a(href="") закажите доставку.
+
+
+            .options__w.options__w_second
+                .options__option
+                    .options__option-title Вариант Б:
+                    .options__option-text С осмотром автомобиля
+
+                    .options__list-title Подходит вам если:
+                    ul.options__list
+                        li.options__list-item Есть перспектива судебных разбирательств
+                        li.options__list-item Есть спор о стоимости долей в наследстве
+                        li.options__list-item В наследство вступает несовершеннолетний
+
+            
+                .options__form.form
+
+                    form(action="", method="post")
+
+                    .options__form-title Количество транспортных средств для оценки:
+                    .form__row.form__row_radio
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="1" name='cars_number_2' checked)
+                                .form__label-text 1
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="2" name='cars_number_2')
+                                .form__label-text 2
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="3" name='cars_number_2')
+                                .form__label-text 3
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="4" name='cars_number_2')
+                                .form__label-text 4
+                    
+                    .options__inspect.form__row.form__row_radio.form__row_radio-full.form__row_deliv
+                        .options__form-title Место осмотра:
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="office" name='cars_place' checked)
+                                .form__label-text Осмотр у нашего офиса
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="mkad" name='cars_place')
+                                .form__label-text Осмотр внутри МКАД + 10 км
+
+                                //- span.form__none стоимость выезда внутри МКАД 1000 р
+
+                        
+                        .form__field.form__field_radio
+                            label.form__label 
+                                input.form__radio(type="radio", value="offmkad" name='cars_place')
+                                .form__label-text Осмотр за МКАД 10-20 км 
+
+
+                    .options__form-bottom
+                        .options__price-title Цена отчета об оценке:
+                        .options__price 2 500 
+                            span руб
+
+                        .options__deliv
+                            .options__deliv-title Доставка по Москве:
+                            .options__deliv-val 200 
+                                span руб
+                        .options__time
+                            .options__time-title Срок изготовления:
+                            .options__time-val 1 
+                                span день
+
+                        input.form__submit.button(type="submit", value="заказать оценку")
+
+
+            .options__how.options__how_second
+                .options__how-title Как проводится оценка с осмотром автомобиля:
+
+                ul.options__how-list
+
+
+                    li.options__how-item
+
+                        img.options__how-icon(src="assets/images/general/send-icon.png", alt="")
+
+                        .options__how-itemtitle Осмотр автомобиля
+
+                        .options__how-text Эксперт проводит осмотр и фотографирование автомобиля, описывает его техническое состояние. 
+
+
+
+                    li.options__how-item
+                        img.options__how-icon(src="assets/images/general/time-icon.png", alt="")
+            
+                        .options__how-itemtitle Подготовка отчета
+
+                        .options__how-text Оценка производится с учетом технического состояния автомобиля. Стоимость устраненения обнаруженных дефектов учитывается в рыночной стоимости.
+
+                    li.options__how-item
+
+                        img.options__how-icon(src="assets/images/general/price-icon.png", alt="")
+
+                        .options__how-itemtitle Получите отчёт
+
+                        .options__how-text Получите готовый отчет об оценке автомобиля  в офисе или закажите доставку.

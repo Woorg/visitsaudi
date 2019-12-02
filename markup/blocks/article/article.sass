@@ -1,0 +1,112 @@
+.article
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  
+  &__image
+
+    max-width: 48.6%
+    width: 100%
+    background-color: rgba(0, 0, 0, 0.24)
+    +r($medium)
+      max-width: 100% 
+    img
+      object-fit: cover
+      
+  &__w
+    padding-top: 54px
+    padding-left: 106px
+    max-width: 50%
+    width: 100%
+    +r($medium)
+      padding-left: 0
+      max-width: 100%
+  &__text-top
+    margin-bottom: 25px
+  &__title
+    margin-bottom: 37px
+    
+  &__text
+    margin-right: -16px
+    margin-bottom: 34px
+    line-height: 1.18
+    
+  &__image
+    position: relative
+    font-size: 0
+
+  &__date
+    position: absolute
+    bottom: 0
+    right: -30px
+    padding-top: 21px
+    padding-right: 30px
+    padding-bottom: 15px
+    padding-left: 30px
+    height: 61px
+    display: inline-block
+    vertical-align: middle
+    background-color: #edac40
+    color: #ffffff
+    font-family: $t
+    font-size: 20px
+    font-weight: 400
+    text-align: center
+    letter-spacing: 0.8px
+    line-height: 1
+    text-transform: uppercase
+    
+    +r($small)
+      padding-top: (22px / 2)
+      padding-right: (30px / 2)
+      padding-bottom: (13px / 2)
+      padding-left: (30px / 2)
+      height: (68px / 2)
+      font-size: 16px
+    
+
+
+.article_events
+  .article__in
+    padding-right: 70px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    
+    +r($medium)
+      padding-right: 40px
+      flex-wrap: wrap
+    
+  .article__image
+    max-width: 50%
+    
+    +r($medium)
+      max-width: 100%
+
+
+  .article__w
+    padding-top: 76px
+    padding-left: 98px
+    max-width: 50%
+    
+    +r($medium)
+      padding-top: (76px / 2) 
+      padding-left: 0
+      
+      max-width: 100%
+
+
+  .article__item-title
+    margin-bottom: 30px
+    color: $orange 
+    font-family: $t
+    font-size: 27px
+    font-weight: 400
+    letter-spacing: 1.08px
+    
+
+
+  .article__date
+    +r($medium)
+      right: -15px

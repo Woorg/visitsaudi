@@ -1,0 +1,28 @@
+mixin header(data)
+  header.header&attributes(attributes)
+    .header__container.container.container_full.flex.flex_center.flex_vertical
+      a.header__logo.logo(href="#") Visit saudi
+      nav.header__nav.nav.flex.flex_start.flex_vertical
+        
+        button.nav__button
+          //- span.nav__button-text Меню
+          span.nav__icon
+            span.nav__line
+            span.nav__line
+            span.nav__line
+                        
+
+        ul.nav__list.flex.flex_start.flex_wrap
+          li.nav__item
+            a.nav__link(href="#about-country") О стране
+          li.nav__item
+            a.nav__link(href="#to-do") Чем заняться
+          li.nav__item
+            a.nav__link(href="#visa") Визы
+          li.nav__item
+            a.nav__link(href="#events") Календарь событий
+          li.nav__item
+            a.nav__link(href="#gallery") Галерея
+
+      a.header__button.button.popup-open(href="#callback") Заказать звонок
+

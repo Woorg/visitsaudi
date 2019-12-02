@@ -1,0 +1,34 @@
+mixin gallery(data)
+  section#gallery.gallery
+    .gallery__container.container
+      .gallery__top.top.flex.flex_start.flex_vertical
+        h2.gallery__title.title Галерея
+
+        .gallery__buttons
+          button.gallery__arrow.gallery__arrow_prev
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'gallery__arrow-icon', iconWidth: '13', iconHeight: '11'})
+          button.gallery__arrow.gallery__arrow_next
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'gallery__arrow-icon', iconWidth: '13', iconHeight: '11'})
+
+    .gallery__slider
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-1.jpg")
+          img(src="assets/images/content/gallery-img-1.jpg" alt="")
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-2.jpg")
+          img(src="assets/images/content/gallery-img-2.jpg" alt="")
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-3.jpg")
+          img(src="assets/images/content/gallery-img-3.jpg" alt="")
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-4.jpg")
+          img(src="assets/images/content/gallery-img-4.jpg" alt="")
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-1.jpg")
+          img(src="assets/images/content/gallery-img-1.jpg" alt="")
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-2.jpg")
+          img(src="assets/images/content/gallery-img-2.jpg" alt="")
+      .gallery__item
+        a.gallery__link(href="assets/images/content/gallery-img-3.jpg")
+          img(src="assets/images/content/gallery-img-3.jpg" alt="")

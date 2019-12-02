@@ -1,0 +1,88 @@
+.stats {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  opacity: .99;
+  border-radius: 10px;
+  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.12);
+  &:before {
+    position: absolute;
+    z-index: 1;
+    
+    top: 8px;
+    right: 8px;
+    left: 8px;
+    bottom: 8px;
+    
+    content: "";
+    display: block;
+    background: #fff;
+    border: 1px dashed #454545;
+    border-radius: 10px;
+    opacity: .3;
+ }
+  
+  &__list {
+    position: relative;
+    z-index: 1;
+    @include resetlist();
+    margin: 2px;
+    // padding-right: 60px;
+    // padding-left: 60px;
+  }
+  &__item {
+    padding-top: 45px;
+    padding-bottom: 48px;
+    text-align: left;
+    @include mq($medium) {
+      text-align: center;
+    }
+    &:nth-child(1) {
+      padding-left: 60px;
+      padding-right: 30px;
+      @include mq($medium) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+    &:nth-child(2) {
+      padding-left: 40px;
+      padding-right: 30px;
+      @include mq($medium) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+    &:nth-child(3) {
+      margin-left: -13px;
+      padding-left: 0;
+      padding-right: 40px;
+      @include mq($medium) {
+        margin-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+  &__num {
+    margin-bottom: 7px;
+    color: $turq;
+    font-size: 36px;
+    font-weight: 700;
+    vertical-align: baseline;
+    span {
+      color: #454545;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  &__text {
+    color: #0f0f0f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}

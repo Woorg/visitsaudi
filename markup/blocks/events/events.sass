@@ -1,0 +1,103 @@
+.events
+  &__container
+    position: relative
+    padding-top: $padding 
+    padding-bottom: 140px
+    +r($medium)
+      padding-bottom: 60px
+  &__top
+    padding-top: 80px
+    padding-bottom: 30px
+    +r($medium)
+      padding-top: 30px
+      flex-wrap: wrap
+
+  &__title
+    letter-spacing: 1.2px
+    +r($medium)
+      margin-bottom: 27px 
+      width: 100%
+
+
+  &__more
+    margin-left: auto
+    
+    +r($medium)
+      margin-left: 0
+
+  &__slider-w
+    position: relative
+    padding-top: 500px
+    
+    +r($medium)
+      padding-top: 0
+      padding-bottom: 90px
+  
+
+  &__slider
+    position: absolute
+    top: 0
+    left: 0
+    margin-top: 72px
+    max-width: 1562px
+    
+    +r($medium)
+      position: static
+      max-width: 100%
+    
+
+  .slick-list
+    padding-right: 25% !important
+    
+    +r($medium)
+      padding-right: 0
+
+  &__nav
+    position: absolute
+    z-index: 1
+    left: 698px
+    bottom: 14px
+    max-width: 132px
+    width: 100%
+    min-height: 34px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    
+    +r($medium)
+      left: 0
+      
+    
+
+  &__arrow
+    +resetbutton()
+    position: absolute
+    top: 50%
+    
+    border: 3px solid #e3e3e3
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    background: transparent
+    color: #e3e3e3
+    transform: translateY(-50%)
+    +tr(all .3s ease)
+    
+    &:hover,
+    &:focus
+      border: 3px solid $orange
+      color: $orange 
+      +tr(all .3s ease)
+
+      
+  &__arrow_prev
+    left: 0
+    transform: translateY(-50%) rotate(180deg)
+  &__arrow_next
+    right: 0
+    
+  &__arrow-icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

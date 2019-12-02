@@ -1,0 +1,110 @@
+.gallery
+  &__container
+    padding-top: 107px
+    padding-bottom: $padding  
+  &__top
+    padding-top: 30px
+    padding-bottom: 30px
+
+  &__slider
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+  &__item
+    position: relative
+    // padding-top: 50px
+    padding-right: 5px
+    padding-left: 5px
+    // padding-bottom: 50px
+    
+    // max-width: 33%
+    // width: 100%
+    // width: 300px
+    height: 500px
+    font-size: 0
+    transform: scale(.9)
+    +tr(all .3s ease)
+
+    
+    
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      
+  // &__link
+  //   position: absolute
+  //   z-index: 1
+  //   top: 0
+  //   right: 0
+  //   bottom: 0
+  //   left: 0
+
+  .slick-current
+
+    // padding-top: 0
+    // padding-right: 5px
+    // padding-left: 5px
+    // padding-bottom: 0
+    transform: scale(1)
+    +tr(all .3s ease)
+    // img
+    
+    + .slick-active
+      transform: scale(.9)
+      +tr(all .3s ease)
+      // img
+        
+      + .slick-slide
+          transform: scale(.8)
+          
+          // img
+      
+    ~ .slick-slide
+      transform: scale(.9)
+      +tr(all .3s ease)
+    
+  &__buttons
+    position: relative
+    margin-left: auto
+    max-width: 78px
+    width: 100%
+    min-height: 34px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+     
+
+  &__arrow
+    +resetbutton()
+    position: absolute
+    top: 50%
+    
+    border: 2px solid #e3e3e3
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    background: transparent
+    color: #e3e3e3
+    transform: translateY(-50%)
+    +tr(all .3s ease)
+    
+    &:hover,
+    &:focus
+      border: 2px solid $orange
+      color: $orange 
+      +tr(all .3s ease)
+
+      
+  &__arrow_prev
+    left: 0
+    transform: translateY(-50%) rotate(180deg)
+  &__arrow_next
+    right: 0
+    
+  &__arrow-icon
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)

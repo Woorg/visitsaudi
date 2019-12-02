@@ -1,0 +1,135 @@
+.nav 
+  // position: relative
+
+  &__button
+    +resetbutton()
+    width: 30px
+    height: 30px
+    display: none
+    color: currentColor
+    
+    +r($large)
+      display: block
+      
+  // &__button-text
+  //   padding-right: 10px
+  //   display: inline-block
+  //   vertical-align: middle
+
+  &__icon
+    position: relative
+    width: 30px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    
+  &__line
+    margin-bottom: 5px
+    height: 2px
+    display: block
+    background: currentColor
+    &:last-child
+      margin-bottom: 0  
+
+
+
+  &__list 
+    display: flex
+    font-size: 18px
+    font-weight: 500
+    text-transform: uppercase
+    
+    +r($large)
+      display: none
+
+  &__item,
+  li 
+    margin-right: 67px
+    margin-bottom: 10px
+    +r($xlarge)
+      margin-right: 50px
+    
+    +r($large)
+      margin-right: 30px
+      
+    +r($medium)
+      margin-right: 15px
+
+
+    &:last-child 
+      margin-right: 0
+      
+  &__link,
+  a 
+    color: inherit
+    text-decoration: none
+    box-shadow: inset 0 -1px 0 transparent
+    +tr(all .3s ease)
+    &:hover 
+      box-shadow: inset 0 -1px 0 $white
+      +tr(all .3s ease)
+      
+
+
+
+
+.nav_secondary
+  .nav__title
+    margin-bottom: 37px
+    font-family: $t
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.64px
+    text-transform: uppercase
+  .nav__list
+    display: block
+    font-size: 16px
+    font-weight: 500
+    letter-spacing: 0.64px
+  .nav__item,
+  li
+    margin-bottom: 17px
+
+  .nav-_link,
+  a
+    text-transform: none
+    
+
+.nav_privacy
+  .nav__item,
+  li
+    margin-right: 0
+
+  .nav__list
+    font-size: 13px
+    font-weight: 400
+    letter-spacing: 0.52px
+    
+
+
+.nav_open
+  .nav__list
+    position: absolute
+    z-index: 1
+    top: 100%
+    left: 0
+    right: 0
+    padding-top: 30px
+    padding-right: 30px
+    padding-bottom: 30px
+    padding-left: 20px
+    width: 100%
+    display: block
+    
+    background: transparentize($black, .2) 
+    
+    font-size: 24px
+
+
+  .nav__item
+    margin-right: 0
+    margin-bottom: 30px
+    
+  .nav__link,
+  a
+    color: currentColor  

@@ -1,0 +1,247 @@
+mixin order(data)
+    .order&attributes(attributes)
+        .order__in.in
+            form(action="file-upload", method="post")
+
+                h2.order__title.title.title_h2 Заказ отчета об оценке
+                
+                .order__w
+                    .order__sub Данные заказчика и наследодателя
+                    .order__upload
+                        .order__upload-text Загрузите фотографии документов как показано на примерах:
+                    
+                        .order__form.form
+                            .order__form-col
+                            
+                                .order__col-title Паспорт наследника
+                                .order__col-text Для заключения договора
+
+
+                                .order__row.order__row_image
+                                    .order__row-label Разворот
+                                    .order__field.form__field.form__field_image
+                                        .order__dropzone
+                                        //- input.form__file(type="file", value="")
+
+                                        input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+                                .order__row.order__row_image
+                                    .order__row-label Прописка
+                                    .order__field.form__field.form__field_image
+                                        .order__dropzone
+                                        //- input.form__file(type="file", value="")
+
+                                        input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+
+                            .order__form-col
+                            
+                                .order__col-title Свидетельство о смерти
+                                .order__col-text Оценка проводится на дату смерти наследодателя
+
+
+                                .order__row
+                                    //- .order__row-label Разворот
+                                    .order__field.form__field.form__field_image
+                                        .order__dropzone
+                                        input.form__file(type="file", value="")
+
+                                        input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+
+
+                .order__w.order__w_second
+                    .order__sub Данные транспортного средства
+                    .order__upload-w
+                        .order__upload.order__upload_vehicle
+                            .order__row
+                                .order__upload-title Транспортное средство №1 
+
+                                .order__upload-label Тип транспортного средства
+
+                                .form__row.form__row_radio
+                                    .form__field.form__field_radio.form__field_radio_second
+                                        label.form__label 
+                                            input.form__radio(type="radio", value="passenger_car" name='cars_type' checked)
+                                            .form__label-text Легковой автомобиль
+                                    .form__field.form__field_radio.form__field_radio_second
+                                        label.form__label 
+                                            input.form__radio(type="radio", value="truck" name='cars_type')
+                                            .form__label-text Грузовой автомобиль
+                                    .form__field.form__field_radio.form__field_radio_second
+                                        label.form__label 
+                                            input.form__radio(type="radio", value="motorcycle" name='cars_type')
+                                            .form__label-text Мотоцикл
+                                    .form__field.form__field_radio.form__field_radio_second
+                                        label.form__label 
+                                            input.form__radio(type="radio", value="trailer" name='cars_type')
+                                            .form__label-text Прицеп
+                                    .form__field.form__field_radio.form__field_radio_second
+                                        label.form__label 
+                                            input.form__radio(type="radio", value="other" name='cars_type')
+                                            .form__label-text Другое
+                            
+
+                            .order__row.order__row_2
+                                .order__col
+                                    .order__upload-title Комплектация
+                                    .order__row
+                                        .order__col.order__col_equip
+
+                                            .order__upload-title Коробка передач
+                                            .form__row.form__row_radio.form__row_radio-full
+                                                .form__field.form__field_radio.form__field_radio_second
+                                                    label.form__label 
+                                                        input.form__radio(type="radio", value="auto" name='gearbox' checked)
+                                                        .form__label-text Автоматическая
+                                                .form__field.form__field_radio.form__field_radio_second
+                                                    label.form__label 
+                                                        input.form__radio(type="radio", value="mechanic" name='gearbox')
+                                                        .form__label-text Механическая
+                                               
+
+
+                                        .order__col.order__col_equip
+                                            .order__upload-title Салон (материал)
+
+                                            .form__row.form__row_radio.form__row_radio-full
+                                                .form__field.form__field_radio.form__field_radio_second
+                                                    label.form__label 
+                                                        input.form__radio(type="radio", value="textile" name='salon' checked)
+                                                        .form__label-text Ткань
+                                                .form__field.form__field_radio.form__field_radio_second
+                                                    label.form__label 
+                                                        input.form__radio(type="radio", value="leather" name='salon')
+                                                        .form__label-text Кожа
+                                
+                                .order__col
+                                    .order__upload-title Пробег (можно примерно)
+                                    .form__field.form__field_range-input
+                                            input.form__input.form__input_range(type="text", value="500 000" )
+
+                                    .form__field.form__field_range.range-slider
+                                        input.form__range.js-range-slider(type="text", value="")
+
+                                    .form__field.form__field_checkbox
+                                        label.form__label 
+                                            input.form__checkbox(type="checkbox", value="" checked)
+                                            span.form__label-text нет данных о пробеге
+
+
+
+                            .order__upload-text Загрузите фотографии документов как показано на примерах:
+                        
+                            .order__form.form
+                                .order__form-col
+                                
+                                    .order__col-title Свидетельство о регистрации ТС
+                                    .order__col-text При наличии
+
+                                    .order__row-w
+                                        .order__row.order__row_image.order__row_side-1
+                                            .order__row-label Сторона 1
+                                            .order__field.form__field.form__field_image
+                                                .order__dropzone
+                                                //- input.form__file(type="file", value="")
+
+                                                input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+                                        .order__row.order__row_image.order__row_side-2
+                                            .order__row-label Сторона 2
+                                            .order__field.form__field.form__field_image
+                                                .order__dropzone
+                                                //- input.form__file(type="file", value="")
+
+                                                input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+
+                                .order__form-col
+                                
+                                    .order__col-title Паспорт транспортного средства
+                                    .order__col-text При наличии
+
+                                    .order__row-w
+                                        .order__row.order__row_image.order__row_side-1
+                                            .order__row-label Сторона 1
+                                            .order__field.form__field.form__field_image
+                                                .order__dropzone
+                                                //- input.form__file(type="file", value="")
+
+                                                input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+                                        .order__row.order__row_image.order__row_side-2
+                                            .order__row-label Сторона 2
+                                            .order__field.form__field.form__field_image
+                                                .order__dropzone
+                                                //- input.form__file(type="file", value="")
+
+                                                input.order__upload-button.button.button_sec(type="button", value="Загрузить")
+
+                    
+
+
+                    a.order__add-vehicle(href="#") 
+                        span добавить еще одно транспортное средство
+                    
+
+
+                    .order__delivery.form
+                        .order__delivery-title Доставка
+
+                        .form__row.form__row_radio.form__row_radio-full
+                            .form__field.form__field_radio.form__field_radio_second
+                                label.form__label 
+                                    input.form__radio(type="radio", value="pick_up" name='delivery' checked)
+                                    .form__label-text Смогу забрать
+                            .form__field.form__field_radio.form__field_radio_second
+                                label.form__label 
+                                    input.form__radio(type="radio", value="1" name='delivery')
+                                    .form__label-text Нужна доставка
+
+
+
+                        .order__delivery-address
+
+                            .form__row.form__row_address
+                                .form__field.form__field_address
+                                    label.form__label 
+                                        .form__label-text Введите адрес доставки
+                                        input.form__input(type="text", value="" name='address' placeholder='г. Москва, ул. Спартаковская, 16 кв 7')
+
+
+                            .order__delivery-price Стоимость доставки по Москве в пределах МКАД составит: 
+                                span 200 рублей 
+                            .order__delivery-note Стоимость доставки за МКАД уточняйте по телефону
+
+                        .order__pickup.order__pickup_active
+                            .order__pickup-text Вы можете забрать готовые документы об оценке по адресу:
+                            .order__pickup-address г. Москва, ул. Твардовского, 18 корп. 2
+                            .order__subway-w
+                                .order__subway
+                                    .order__subway-icon(style="background-color: #29abe2;") м
+                                    | метро Строгино
+                                .order__subway 
+                                    .order__subway-icon(style="background-color: #29abe2;") м
+                                    | метро Щукинская
+
+                    .order__phone.form
+                        .order__phone-title Введите номер телефона для связи
+
+                        .order__phone-form
+                            .form__row
+                                .form__field.form__field_phone
+                                    input.form__input(type="text", value="", placeholder="+7(926)772-27-27")
+
+                            .form__row
+                                .form__field.form__field_checkbox.form__field_privacy
+                                    label.form__label(for="callback-1") 
+                                        input#callback-1.form__checkbox(type="checkbox" value="" checked required)
+                                        span.form__label-text Я согласен <a href='#'>с условиями</a> обработки персональных данных
+
+
+
+        .cta
+            .cta__in
+                a.cta__button.button(href="#button") заказать оценку
+
+                .cta__text Мы свяжемся с вами, уточним детали и сообщим о готовности документов

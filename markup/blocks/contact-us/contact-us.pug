@@ -1,0 +1,23 @@
+mixin contact-us(data)
+  section.contact-us
+    .contact-us__container.container
+      .contact-us__top.top
+        h2.contact-us__title.title Свяжитесь с нами
+
+      .contact-us__row.flex.flex_start.flex_top
+        #map.contact-us__map
+          .contact-us__caption 23.85, 45.725533
+        .contact-us__w
+          .contact-us__currency
+            h3.contact-us__currency-title.title.title_reg Валюты и Платежи
+            .contact-us__text.text 
+              p Национальной валютой Саудовской Аравии является саудовский риал (символ: SAR), который подразделяется на 100 халал. 
+              p Вы получите банкноты достоинством в пять риалов, десять риалов, 50 риалов, 100 риалов и 500 риалов; и монеты в одном риале, два риала, 50 халала, 25 халала, 10 халала, пять халала и одна халала.
+
+          .contact-us__address
+            h3.contact-us__address-title.title.title_reg Как нас найти
+            .contact-us__text.text Тут будет адрес и телефоны в две строчки
+
+
+            a.contact-us__more.more.more_rounded(href="#") Перейти к сайту
+              != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})

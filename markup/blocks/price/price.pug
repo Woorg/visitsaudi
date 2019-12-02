@@ -1,0 +1,45 @@
+mixin price(data)
+  section.price
+    .price__container(class="uk-container")
+      h2.price__title.title.title_regular <span>Стоимость</span> имплантов
+      .price__text Стоимость импланта OSSTEM под ключ (снимок, <br/>коронка, имплант, работа и т.д.)
+      .price__row(class="uk-flex uk-flex-start uk-flex-wrap") 
+        .price__col(class="uk-width-1-1@s uk-width-1-2@m ")
+          .price__image
+            img.lazy(data-src="assets/images/general/cost-image.jpg", alt="")
+            .price__cost
+              .price__cost-w
+                .price__cost-text 50 000
+                .price__cost-curr руб
+
+        .price__col(class="uk-width-1-1@s uk-width-1-2@m ")
+          .price__summary Оставьте заявку прямо сейчас и получите <span>скидку 10 000 руб на лечение!</span>
+
+
+          .price__countdown
+            .price__countdown-title До конца акции осталось:
+            .price__countdown-w(  uk-countdown="date: 2019-11-30T19:11:51+00:00")
+              .price__countdown-item
+                .price__countdown-num.uk-countdown-number.uk-countdown-days
+                .price__countdown-text Дней
+
+              .price__countdown-sep.uk-countdown-separator :
+
+              .price__countdown-item
+                .price__countdown-num.uk-countdown-number.uk-countdown-hours
+                .price__countdown-text Часов
+
+              .price__countdown-sep.uk-countdown-separator :
+
+              .price__countdown-item
+                .price__countdown-num.uk-countdown-number.uk-countdown-minutes
+                .price__countdown-text Минут
+
+              .price__countdown-sep.uk-countdown-separator :
+
+              .price__countdown-item
+                .price__countdown-num.uk-countdown-number.uk-countdown-seconds
+                .price__countdown-text Секунд
+
+          
+          a.price__button.button.button_regular(href="#") Получить скидку

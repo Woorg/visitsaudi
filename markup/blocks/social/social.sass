@@ -1,0 +1,32 @@
+.social
+  &__title
+    margin-bottom: 35px
+    font-family: $t
+    font-size: 16px
+    font-weight: 700
+    letter-spacing: 0.64px
+    text-transform: uppercase
+  &__list
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+  &__item
+    margin-right: 57px
+    &:last-child
+      margin-right: 0
+  &__item_twitter
+    .social__link
+      +bg($twitter-icon)
+  &__item_inst
+    .social__link
+      +bg($inst-icon)
+
+  &__item_fb
+    .social__link
+      +bg($fb-icon)
+      
+  &__link
+    display: block
+    text-decoration: none
+

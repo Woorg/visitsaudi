@@ -1,0 +1,145 @@
+doctype html
+html(class="no-js", lang="ru")
+
+  include ../blocks/head/head.pug
+  include ../blocks/header/header.pug
+  //- include ../blocks/nav/nav.pug
+  //- include ../blocks/contacts/contacts.pug
+
+  include ../blocks/hero/hero.pug
+  include ../blocks/about-country/about-country.pug
+  include ../blocks/to-do/to-do.pug
+  include ../blocks/visa/visa.pug
+  include ../blocks/events/events.pug
+  include ../blocks/know/know.pug
+  include ../blocks/gallery/gallery.pug
+  include ../blocks/contact-us/contact-us.pug
+  include ../blocks/popup/popup.pug
+  include ../blocks/form/form.pug
+  //- include ../blocks/what/what.pug
+  //- include ../blocks/how/how.pug
+  //- include ../blocks/inspection/inspection.pug
+  //- include ../blocks/who/who.pug
+  //- include ../blocks/why/why.pug
+  //- include ../blocks/rating/rating.pug
+  //- include ../blocks/reviews/reviews.pug
+  //- include ../blocks/certificate/certificate.pug
+  //- include ../blocks/price/price.pug
+  //- include ../blocks/faq/faq.pug
+  //- include ../blocks/bottom/bottom.pug
+  //- include ../blocks/map/map.pug
+  //- include ../blocks/contacts/contacts.pug
+
+  //- include ../blocks/inherit/inherit.pug
+  //- include ../blocks/calc/calc.pug
+  //- include ../blocks/accept/accept.pug
+  //- include ../blocks/options/options.pug
+  //- include ../blocks/result/result.pug
+  //- include ../blocks/faq/faq.pug
+  //- include ../blocks/licenses/licenses.pug
+  //- include ../blocks/clients/clients.pug
+  //- include ../blocks/articles/articles.pug
+  //- include ../blocks/cta/cta.pug
+  //- include ../blocks/addresses/addresses.pug
+  //- include ../blocks/questions/questions.pug
+
+
+  include ../blocks/footer/footer.pug
+
+  //- include ../blocks/popup/popup.pug
+
+  head
+      +head(head.defaults)
+  body.page
+    .page__wrapper
+      |%=symbols=%
+      +header()
+      // end header
+      main.page__inner
+        +hero()
+        // end hero
+        +about-country()
+        // end about
+        +to-do()
+        // end todo
+        +visa()
+        // end visa
+        +events()
+        // end events
+        +know()
+        // end know
+        +gallery()
+        // end gallery
+        +contact-us()
+
+        //end contact-us
+
+        //- +what()
+        //- +how()
+        //- +inspection()
+        //- +who()
+        //- +why()
+        //- +rating()
+        //- +reviews()
+        //- +certificate()
+        //- +price()
+        //- +faq()
+        //- +bottom()
+        //- +inherit()
+        //- +what()
+        //- +calc()
+        //- +accept()
+        //- +options()
+        //- +result()
+        //- +faq()
+        //- +licenses()
+        //- +clients()
+        //- +articles()
+        //- +articles-second()
+        //- +cta()
+        //- +addresses()
+        //- +questions()
+      .page__footer
+        +footer()
+        //- end footer
+        +popup()#callback.mfp-hide
+
+    script(src='%=static=%js/separate-js/lazyload.min.js' )
+    script(src='%=static=%js/separate-js/jquery.min.js')
+    //- script(src='%=static=%js/separate-js/uikit-core.min.js')
+    //- script(src='%=static=%js/separate-js/uikit-icons.min.js')
+
+    //- script(src='%=static=%js/separate-js/components/slider.min.js')
+    //- script(src='%=static=%js/separate-js/components/countdown.min.js')
+
+
+    script(src='%=static=%js/separate-js/jquery.magnific-popup.min.js')
+    script(src='%=static=%js/separate-js/slick.min.js')
+    script(src='%=static=%js/separate-js/jquery.mask.min.js')
+    script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+    script(src="//api-maps.yandex.ru/2.1/?apikey=d491e610-d9d0-4022-9b4c-e2d184cf5425&lang=ru_RU")
+    script.
+      ymaps.ready(init);
+      
+      function init() {
+        var myMap = new ymaps.Map('map', {
+          center: [23.011112, 45.901314], // Москва
+          zoom: 5
+        }, {
+          searchControlProvider: ''
+        });
+
+        var myPlacemark = new ymaps.Placemark(
+          [23.011112, 45.901314], {
+              balloonContent: 'Саудовская аравия'
+          }, {
+              //- iconLayout: 'default#image',
+          }      
+        );
+
+        myMap.geoObjects.add(myPlacemark);
+
+      }
+
+

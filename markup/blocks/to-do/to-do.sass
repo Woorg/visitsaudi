@@ -1,0 +1,84 @@
+.to-do
+  &__container
+    padding-top: $padding-section
+    padding-bottom: 111px
+    +r($medium)
+      padding-bottom: (111px / 2)
+
+  &__top
+    padding-top: 30px
+    padding-bottom: 30px
+    
+    +r($medium)
+      flex-wrap: wrap
+    
+  &__title
+    letter-spacing: 1.6px 
+    +r($medium)
+      margin-bottom: 27px
+      width: 100%
+      
+  &__more
+    margin-top: -8px
+    margin-left: auto
+    
+    +r($medium)
+      margin-top: 0
+      margin-left: 0
+
+
+  &__article
+    padding-top: 69px
+    padding-bottom: 30px
+    &:nth-child(odd)
+      .article__w
+        margin-right: auto
+        padding-top: 35px
+        padding-left: 0
+        padding-right: 100px
+        
+        +r($medium)
+          padding-right: 0
+      
+      .article__text-top
+        padding-right: 110px
+        
+        +r($medium)
+          padding-right: 0
+    
+    &:nth-child(even)
+      .article__image
+        margin-right: auto
+        order: -1
+        
+      .article__w
+        padding-top: 42px
+        padding-right: 0
+        padding-left: 107px
+        
+        +r($medium)
+          padding-left: 0
+        
+      .article__text-top
+        margin-bottom: 20px
+        padding-right: 130px
+      
+        +r($medium)
+          padding-right: 0
+
+
+    &:nth-child(3)
+      .article__w
+        padding-top: 47px
+
+    .article__image
+      +r($medium)
+        order: -1
+
+    .article__w
+      padding-top: 33px
+      padding-left: 0
+      
+    .article__title
+      margin-bottom: 34px
+  

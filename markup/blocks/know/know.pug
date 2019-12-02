@@ -1,0 +1,63 @@
+mixin know(data)
+  section.know
+    .know__container.container
+      .know__top.top
+        h2.know__title.title Полезно знать
+
+
+    .know__slider-w    
+      .know__nav-w.container
+        .know__nav
+          button.know__arrow.know__arrow_prev
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'know__arrow-icon', iconWidth: '20', iconHeight: '18'})
+          button.know__arrow.know__arrow_next
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'know__arrow-icon', iconWidth: '20', iconHeight: '18'})
+
+
+      .know__slider
+        .know__item.lazy(data-bg="url(assets/images/content/know-img-1.jpg)")
+          .know__container.container
+            .know__w
+              .know__text-top.text-top Испытайте невероятные эмоции <br/>от завораживающих видов
+              h3.know__item-title.title.title_reg Вулканы Саудовской Аравии
+              .know__text.text 
+                p Халлат-эль-Бадр — вулканический конус, часть лавового поля Харрат-эль-Увайрид. Расположен на Аравийском полуострове, на территории нынешней Саудовской Аравии. Является частью вулканического поля Харрат Увайрид. 
+
+                p Некоторыми исследователями считается местом Синайского откровения ввиду того, что предположительно вулкан Харрат Юварийд был активен в период Исхода. 
+
+                p Среди сторонников гипотезы о том, что Синайское откровение могло произойти на вулкане были Зигмунд Фрейд и И.Великовский.
+              
+              a.know__more.more(href="#") Узнать больше
+                != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+              
+
+        .know__item.lazy(data-bg="url(assets/images/content/know-img-1.jpg)")
+          .know__container.container
+            .know__w
+              .know__text-top.text-top Испытайте невероятные эмоции <br/>от завораживающих видов
+              h3.know__item-title.title.title_reg Вулканы Саудовской Аравии 2
+              .know__text.text 
+                p Халлат-эль-Бадр — вулканический конус, часть лавового поля Харрат-эль-Увайрид. Расположен на Аравийском полуострове, на территории нынешней Саудовской Аравии. Является частью вулканического поля Харрат Увайрид. 
+
+                p Некоторыми исследователями считается местом Синайского откровения ввиду того, что предположительно вулкан Харрат Юварийд был активен в период Исхода. 
+                
+                p Среди сторонников гипотезы о том, что Синайское откровение могло произойти на вулкане были Зигмунд Фрейд и И.Великовский.
+
+              a.know__more.more(href="#") Узнать больше
+                != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+
+        .know__item.lazy(data-bg="url(assets/images/content/know-img-1.jpg)")
+          .know__container.container
+            .know__w
+              .know__text-top.text-top Испытайте невероятные эмоции <br/>от завораживающих видов
+              h3.know__item-title.title.title_reg Вулканы Саудовской Аравии 3
+              .know__text.text 
+                p Халлат-эль-Бадр — вулканический конус, часть лавового поля Харрат-эль-Увайрид. Расположен на Аравийском полуострове, на территории нынешней Саудовской Аравии. Является частью вулканического поля Харрат Увайрид. 
+
+                p Некоторыми исследователями считается местом Синайского откровения ввиду того, что предположительно вулкан Харрат Юварийд был активен в период Исхода. 
+                
+                p Среди сторонников гипотезы о том, что Синайское откровение могло произойти на вулкане были Зигмунд Фрейд и И.Великовский.
+
+              a.know__more.more(href="#") Узнать больше
+                != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})

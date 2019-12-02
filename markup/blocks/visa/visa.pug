@@ -1,0 +1,9 @@
+mixin visa(data)
+  section#visa.visa
+    .visa__container.container.flex.flex_start.flex_top
+      h2.visa__title.title.title_reg Визы
+      .visa__w
+        .visa__text.text Новая визовая система является исторической вехой в открытии Саудовской Аравии для туризма. Зарубежные посетители откроют для себя теплое гостеприимство саудовского народа: наше богатое наследие, яркую культуру и разнообразные и захватывающие дух пейзажи, от гор Абха до пляжей Красного моря и зыбучих песков Пустого квартала.
+        
+        a.visa__button.button.button_wth_arrow(href="") Получить визу
+          != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'button__icon', iconWidth: '13', iconHeight: '11'})

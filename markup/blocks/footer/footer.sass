@@ -1,0 +1,83 @@
+.footer
+  background: $orange
+  color: $white 
+  &__container
+      padding-bottom: 90px
+      +r($small)
+        padding-bottom: (90px / 2)
+
+  &__row
+    &:first-child
+      padding-top: 123px
+      +r($medium)
+        flex-wrap: wrap
+        
+      +r($small)
+        padding-top: 60px
+      
+    &:last-child
+      padding-top: 63px
+      +r($medium)
+        flex-wrap: wrap
+      +r($small)
+        padding-top: 0
+
+
+  &__nav
+    max-width: 274px
+    width: 100%
+
+    +r($medium)
+      margin-bottom: 30px
+      max-width: 50%
+    
+    +r($small)
+      max-width: 100%
+      margin-bottom: 30px
+
+  &__social
+    margin-left: auto
+    border-bottom: 1px solid rgba(255, 255, 255, 0.47)
+    padding-bottom: 70px
+    
+    max-width: 220px
+    width: 100%
+    
+    +r($medium)
+      max-width: 50%
+      margin-bottom: 30px
+      
+    +r($small)
+      margin-bottom: 30px
+      padding-bottom: 30px
+      max-width: 100%
+
+  &__button
+    border: 3px solid $white
+    padding-right: 70px
+    padding-left: 23px
+    color: $white
+    &:hover
+      border: 3px solid darken($white, 10)
+      color: darken($white, 10)
+    
+    +r($small)
+      margin-bottom: 30px
+
+  &__privacy
+    margin-left: auto
+    max-width: 220px
+    width: 100%
+    
+    
+    +r($medium)
+      max-width: 50%
+      margin-bottom: 30px
+    
+    +r($small)
+      max-width: 100%
+      margin-bottom: 30px
+
+
+    
+      

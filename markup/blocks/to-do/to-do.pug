@@ -1,0 +1,53 @@
+mixin to-do(data)
+  section#to-dos.to-do&attributes(attributes)
+    .to-do__container.container
+      .to-do__top.top.flex.flex_start.flex_vertical
+        h2.to-do__title.title Чем заняться
+        a.to-do__more.more.more_rounded(href="#") Посмотреть всё
+          
+          != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+      .to-do__articles
+        .to-do__article.article
+          .article__w
+            .article__text-top.text-top Исследуйте достопримечательности исторического города
+
+            h3.article__title.title.title_reg Города
+
+            .article__text.text Крупнейший город, столица королевства, его политический, культурный и научный центр — Эр-Рияд с населением более 7 млн человек. Джидда — второй по величине город страны, её «экономическая столица», важнейший порт на Красном море. Мекка и Медина, являясь одними из крупнейших городов страны, являются символами Саудовской Аравии  и священными городами ислама
+
+            a.article__more.more(href="#") Подробнее
+              != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .article__image
+            img(src="assets/images/content/todo-img-1.jpg", alt="")
+
+
+        .to-do__article.article
+          .article__w
+            .article__text-top.text-top Посетите самые живописные пляжи Саудовской Аравии
+
+            h3.article__title.title.title_reg Пляжи
+
+            .article__text.text Саудовская Аравия расположена в Юго-Западной Азии и является одной из крупнейших стран данного региона. Саудовская Аравия граничит с Персидским заливом и Красным морем. Саудовская Аравия вследствие своего расположения богата на нефтяные ресурсы и экспортирует их через Суэцкий канал, и Персидский залив. 
+
+            a.article__more.more(href="#") Подробнее
+              != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .article__image
+            img(src="assets/images/content/todo-img-1.jpg", alt="")
+
+
+        .to-do__article.article
+          .article__w
+            .article__text-top.text-top Узнайте о самых знаменитых горах Саудовской Аравии
+
+            h3.article__title.title.title_reg Горы
+
+            .article__text.text На западе, параллельно побережью Красного моря, протянулись горы Хиджаз и Асир высотой 2500—3000 м, переходящие в прибрежную низменность Тихама. В горах Асира рельеф меняется от горных вершин до крупных долин.
+
+            a.article__more.more(href="#") Подробнее
+              != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .article__image
+            img(src="assets/images/content/todo-img-3.jpg", alt="")

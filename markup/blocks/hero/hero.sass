@@ -1,0 +1,81 @@
+.hero 
+  position: relative
+  color: $white
+  
+  &__slider
+    height: 964px
+    +r($small)
+      height: auto
+  
+  &__container
+    position: relative
+    
+  &__nav
+    position: absolute
+    z-index: 1
+    left: 15px
+    bottom: 118px
+    max-width: 160px
+    width: 100%
+    min-height: 34px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+  &__buttons
+    position: relative
+    width: 78px
+
+  &__arrow
+    +resetbutton()
+    position: absolute
+    top: 50%
+    
+    border: 2px solid $white
+    width: 34px
+    height: 34px
+    border-radius: 50%
+    background: transparent
+    color: inherit 
+    transform: translateY(-50%)
+    +tr(all .3s ease)
+    
+    &:hover,
+    &:focus
+      border: 2px solid $orange
+      color: $orange 
+      +tr(all .3s ease)
+      
+  &__arrow_prev
+    left: 0
+    transform: translateY(-50%) rotate(180deg)
+  &__arrow_next
+    right: 0
+
+  &__count
+    margin-left: 24px
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.64px
+
+  &__count-current
+    font-weight: 500
+    
+  &__count-sep
+    margin-right: 5px
+    margin-left: 5px
+    font-weight: 400 
+    color: transparentize($white, .65) 
+  &__count-all
+    font-weight: 400 
+    color: transparentize($white, .65) 
+    
+  &__down-icon
+    position: absolute
+    bottom: 66px
+    left: calc(50% - 27px)
+    fill: transparent
+    transform: translateX(-50%)
+      
+    +r($small)
+      left: 50%

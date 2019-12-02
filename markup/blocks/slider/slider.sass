@@ -1,0 +1,86 @@
+.slider
+  background-color: rgba(0, 0, 0, 0.24)
+  &__item
+    min-height: 964px
+    background-position: 50% 0
+    background-repeat: no-repeat  
+    // background-size: 1920px 964px
+    background-size: cover    
+    
+    +r($small)
+      min-height: 700px
+
+  // &__link
+    // height: 100%
+    // display: block
+
+  // &__image
+  //   position: absolute
+  //   top: 0
+  //   right: 0
+  //   bottom: 0
+  //   left: 0
+  //   img
+  //     object-fit: cover
+  
+  &__container
+    position: relative
+    height: 964px
+    +r($small)
+      height: 700px
+      
+  &__w
+    position: absolute
+    z-index: 1
+    top: 50%
+    left: 15px
+    // height: 100%
+    transform: translateY(-50%)
+
+  &__title
+    margin-bottom: 71px
+    font-family: $t
+    font-size: 35px
+    font-weight: 400
+    text-transform: uppercase
+    
+    +r($small)
+      font-size: 25px
+
+    span,
+    strong,
+    b
+      margin-top: 14px
+      display: block
+      font-size: 60px
+      letter-spacing: 2.2px
+      +r($small)
+        font-size: 37px
+
+  &__video
+    position: relative
+    padding-right: 80px
+    max-width: 210px
+    width: 100%
+    color: inherit 
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: 0.64px
+    text-decoration: none
+    +tr(all .3s ease)
+  &__video-icon
+    position: absolute
+    top: 50%
+    right: 0
+    content: ""
+    background: transparent
+    fill: transparent
+    transform: translateY(-50%)
+    +tr(all .3s ease)
+    &:hover
+      color: darken($white, 10)
+      +tr(all .3s ease)
+      &:after
+        opacity: .8
+        +tr(all .3s ease)
+

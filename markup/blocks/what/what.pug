@@ -1,0 +1,32 @@
+mixin what(data)
+  section.what&attributes(attributes)
+    img.what__drill.lazy(data-src="assets/images/general/drill-image.png", alt="drill")
+    .what__in.in(class="uk-container")
+      .what__row(class="uk-flex uk-flex-wrap")
+        h2.what__title.title.title_regular(class="uk-width-1-1@s uk-width-1-3@m") Что такое <span>импланты</span> и когда они нужны
+        .what__row(class="uk-flex uk-flex-wrap")
+          .what__col(class="uk-width-1-1@s uk-width-1-2@m")
+            .what__text.text
+              p <span>Имплантация зубов</span> – это методика восстановления утраченного зуба.
+              p Это процедура, при которой в кость челюсти вживляют особое приспособление – имплант. Благодаря имплантации человек сегодня может восстановить совершенно любое количество утраченных зубов – один или все сразу.
+
+          .what__col(class="uk-width-1-1@s uk-width-1-3@m")
+            .what__help
+              .what__help-title Поможет в случае когда
+              .what__help-text Отсутствует один зуб или несколько, множественная потеря зубов, полное отсутствие зубов
+
+      .what__row(class="uk-flex uk-flex-wrap")
+        .what__implantation.implantation( class="uk-margin-auto-left uk-margin-auto-right")
+          h3.implantation__title.title.title_small Имплантация бывает
+          
+          .implantation__image.lazy(data-bg="url('assets/images/general/implant-image.jpg')" class="")
+
+            .implantation__kind.implantation__kind_first
+              .implantation__kind-w
+                .implantation__kind-title Одномоментная
+                .implantation__kind-text (также именуемая экспресс или моментальной) заключается в том, что металлический винт устанавливается сразу после удаления зубного корня
+
+            .implantation__kind.implantation__kind_second
+              .implantation__kind-w
+                .implantation__kind-title Классическая
+                .implantation__kind-text Предполагает отсроченную нагрузку – коронка устанавливается лишь после того, как имплант полноценно сросся с костью.

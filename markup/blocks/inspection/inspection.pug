@@ -1,0 +1,27 @@
+mixin inspection(data)
+  .inspection
+    img.inspection__image.lazy(data-src="assets/images/general/tool-image.png", alt="")
+    .inspection__container(class="uk-container uk-flex uk-flex-wrap ")
+      .inspection__col(class="uk-width-1-1@s uk-width-1-2@m ")
+        .inspection__top Не знаете, подойдет ли Вам?
+        .inspection__title.title Запишитесь на <span>БЕСПЛАТНЫЙ</span> осмотр
+        .inspection__text.text Врач осмотрит Вас и расскажет все возможности и риски. Вы на месте сможете определиться. 
+        .inspection__summary Оставьте заявку прямо сейчас и получите видео-приглашение от Вашего доктора!
+      
+      .inspection__col(class="uk-width-1-1@s uk-width-1-2@m ")
+        
+        .inspection__form-w(class="uk-flex uk-flex-wrap")
+          img.inspection__form-image.lazy(data-src="assets/images/general/inspection-image.jpg", alt="")
+          .inspection__form-in
+            .inspection__form-title Заполните форму и получите приглашение на осмотр
+
+            form.inspection__form.form(action="", method="post")
+              .form__field
+                input.form__input.uk-input(type='text' placeholder='Ваше имя')
+              .form__field
+                input.form__input.uk-input(type='text' placeholder='Телефон')
+
+              input.form__submit.uk-button.button.button_regular(type='submit' value='Хочу бесплатный осмотр')
+
+              .form__privacy Нажимая кнопку вы даете согласие на
+                a.form__privacy-link(href="#") обработку персональных данных

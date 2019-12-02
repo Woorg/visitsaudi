@@ -1,0 +1,42 @@
+mixin hero(data)
+  .hero&attributes(attributes)
+    .hero__slider.slider
+      .slider__item.lazy(data-bg="url(assets/images/content/hero-img-1.jpg)")
+        .slider__container.container
+          .slider__w
+            .slider__title Откройте для себя <span>саудовскую аравию</span>
+            a.slider__video(href="#") Смотреть видео
+              != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'slider__video-icon', iconWidth: '50', iconHeight: '50'})
+      .slider__item.lazy(data-bg="url(assets/images/content/hero-img-1.jpg)")
+        .slider__container.container
+          .slider__w
+            .slider__title Откройте для себя <span>саудовскую аравию 2</span>
+            a.slider__video(href="#") Смотреть видео
+              != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'slider__video-icon', iconWidth: '50', iconHeight: '50'})
+
+      .slider__item.lazy(data-bg="url(assets/images/content/hero-img-1.jpg)")
+        .slider__container.container
+          .slider__w
+            .slider__title Откройте для себя <span>саудовскую аравию 3</span>
+            a.slider__video(href="#") Смотреть видео
+              != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'slider__video-icon', iconWidth: '50', iconHeight: '50'})
+
+      .slider__item.lazy(data-bg="url(assets/images/content/hero-img-1.jpg)")
+        .slider__container.container
+          .slider__w
+            .slider__title Откройте для себя <span>саудовскую аравию 4</span>
+            a.slider__video(href="#") Смотреть видео
+              != pugHelpers.Icon.call(locals, {iconName: 'play-icon', className: 'slider__video-icon', iconWidth: '50', iconHeight: '50'})
+    
+    .hero__container.container
+
+      .hero__nav
+        .hero__buttons
+          button.hero__arrow.hero__arrow_prev
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'hero__arrow-icon', iconWidth: '13', iconHeight: '11'})
+          button.hero__arrow.hero__arrow_next
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'hero__arrow-icon', iconWidth: '13', iconHeight: '11'})
+        .hero__count
+
+    != pugHelpers.Icon.call(locals, {iconName: 'mouse-icon', className: 'hero__down-icon', iconWidth: '19', iconHeight: '26'})
+

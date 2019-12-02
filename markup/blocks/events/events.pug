@@ -1,0 +1,56 @@
+mixin events(data)
+  section#events.events
+    .events__container.container
+      .events__top.top.flex.flex_start.flex_vertical
+        h2.events__title.title Календарь событий
+        a.events__more.more.more_rounded(href="#") Посмотреть всё
+          != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+      .events__slider-w
+        .events__nav
+          button.events__arrow.events__arrow_prev
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'events__arrow-icon', iconWidth: '20', iconHeight: '18'})
+            
+          button.events__arrow.events__arrow_next
+            != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'events__arrow-icon', iconWidth: '20', iconHeight: '18'})
+
+
+        .events__slider
+          .events__item.article.article_events
+            .article__in
+              .article__image
+                img(src="assets/images/content/event-img-1.jpg", alt="")
+                .article__date 14 НОЯБРЯ 10.00
+              .article__w
+                h3.article__item-title Большая мечеть Мекки
+                .article__text.text В Мекке сооружён самый массивный в мире комплекс башен-небоскрёбов Абрадж аль-Бейт; его самое высокое здание — Королевская башня — является третьим по высоте зданием в мире и имеет самые большие и высотные в мире часы.
+
+
+                a.article__link.more(href="#") ПОСЕТИТЬ
+                  != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .events__item.article.article_events
+            .article__in
+              .article__image
+                img(src="assets/images/content/event-img-2.jpg", alt="")
+                .article__date 14 НОЯБРЯ 10.00
+              .article__w
+                h3.article__item-title Большая мечеть Мекки
+                .article__text.text В Мекке сооружён самый массивный в мире комплекс башен-небоскрёбов Абрадж аль-Бейт; его самое высокое здание — Королевская башня — является третьим по высоте зданием в мире и имеет самые большие и высотные в мире часы.
+
+
+                a.article__link.more(href="#") ПОСЕТИТЬ
+                  != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .events__item.article.article_events
+            .article__in
+              .article__image
+                img(src="assets/images/content/event-img-3.jpg", alt="")
+                .article__date 14 НОЯБРЯ 10.00
+              .article__w
+                h3.article__item-title Большая мечеть Мекки
+                .article__text.text В Мекке сооружён самый массивный в мире комплекс башен-небоскрёбов Абрадж аль-Бейт; его самое высокое здание — Королевская башня — является третьим по высоте зданием в мире и имеет самые большие и высотные в мире часы.
+
+
+                a.article__link.more(href="#") ПОСЕТИТЬ
+                  != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})

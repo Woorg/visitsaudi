@@ -1,0 +1,28 @@
+mixin questions(data)
+    section.questions
+        .questions__in.in
+            h2.questions__title.title.title_h2 Остались вопросы?
+
+            .questions__w
+
+                .questions__image
+                    img(src="assets/images/general/call-us.png", alt="")
+
+                .questions__phone
+                    .questions__phone-title Звоните нам
+                    a.questions__phone-val(href="+74995060870") +7(499)506-08-70
+
+
+                .questions__form.form
+                    form(action="" method='post')
+                        .form__row
+                            .form__field.form__field_phone
+                                label.form__label Или оставьте номер телефона
+                                    input.form__input(type="text", value="", placeholder="+7(926)772-27-27")
+
+                        input.form__submit.button(type="submit", value="жду звонка")
+                        .form__row
+                            .form__field.form__field_checkbox.form__field_privacy
+                                label.form__label
+                                    input.form__checkbox(type="checkbox" value="" checked required)
+                                    span.form__label-text Я согласен <a href='#'>с условиями</a> обработки персональных данных

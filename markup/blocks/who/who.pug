@@ -1,0 +1,70 @@
+mixin who(data)
+  section.who.lazy(data-bg="url('assets/images/general/who-bg.jpg')")
+    .who__container(class="uk-container")
+      h2.who__title.title.title_regular Кто <span>проводит</span> процедуру
+      .who__text.text Наши врачи - эксперты с минимум 5-летним опытом имплантации. <br/>Посмотрите врачей и выберите понравившегося.
+
+      .who__slider-w(uk-slider="finite:true;")
+        a.who__slider-arrow.who__slider-arrow_next.uk-position-center-right.uk-position-small.uk-hidden-hover(href='#' uk-slidenav-next='' uk-slider-item='next')
+        a.who__slider-arrow.who__slider-arrow_prev.uk-position-center-left.uk-position-small.uk-hidden-hover(href='#' uk-slidenav-previous='' uk-slider-item='previous')
+
+        
+        .uk-slider-container
+
+          ul.who__slider.uk-slider-items(class='uk-child-width-1-2@s uk-child-width-1-4@m ')
+            li.who__slider-item
+              .who__slider-in
+                .who__slider-image
+                  img(src='assets/images/content/who-image-1.jpg' alt='')
+                .who__caption
+                  .who__name Кох (Биленко) <br/>Ксения Алексеевна
+                  .who__position Главный врач, ортопед
+                  .who__slider-text Ортопедическая стоматология. Протезирование на драгметаллах, вкладки, виниры, гнатология.
+                  a.who__button.button.button_medium(href="#button") Записаться
+                a.who__slider-link(href="#")
+
+            li.who__slider-item
+              .who__slider-in
+                .who__slider-image
+                  img(src='assets/images/content/who-image-2.jpg' alt='')
+                .who__caption
+                  .who__name Евдокимова <br/>Зоя Алексеевна
+                  .who__position Ведущий специалист, терапевт
+                  .who__slider-text Ортопедическая стоматология. Протезирование на драгметаллах, вкладки, виниры, гнатология.
+                  a.who__button.button.button_medium(href="#button") Записаться
+                a.who__slider-link(href="#")
+
+            li.who__slider-item
+              .who__slider-in
+                .who__slider-image
+                  img(src='assets/images/content/who-image-3.jpg' alt='')
+                .who__caption
+                  .who__name Могинов <br/>Данис РаисовичКох
+                  .who__position Ведущий специалист, ортопед
+                  .who__slider-text Ортопедическая стоматология. Протезирование на драгметаллах, вкладки, виниры, гнатология.
+                  a.who__button.button.button_medium(href="#button") Записаться
+                a.who__slider-link(href="#")
+
+            li.who__slider-item
+              .who__slider-in
+                .who__slider-image
+                  img(src='assets/images/content/who-image-4.jpg' alt='')
+                .who__caption
+                  .who__name Шогенова <br/>Мадина Хабасовна
+                  .who__position Кандидат медиц. наук, терапевт
+                  .who__slider-text Ортопедическая стоматология. Протезирование на драгметаллах, вкладки, виниры, гнатология.
+                  a.who__button.button.button_medium(href="#button") Записаться
+                a.who__slider-link(href="#")
+
+            li.who__slider-item
+              .who__slider-in
+                .who__slider-image
+                  img(src='assets/images/content/who-image-1.jpg' alt='')
+                .who__caption
+                  .who__name Кох (Биленко) <br/>Ксения Алексеевна
+                  .who__position Главный врач, ортопед
+                  .who__slider-text Ортопедическая стоматология. Протезирование на драгметаллах, вкладки, виниры, гнатология.Записаться 
+                  a.who__button.button.button_medium(href="#button") Записаться
+                a.who__slider-link(href="#")
+
+

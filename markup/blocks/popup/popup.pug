@@ -1,0 +1,27 @@
+mixin popup(data)
+  .popup&attributes(attributes)
+    h2.popup__title.title.title_reg Заказать звонок
+    .popup__text.text Мы свяжемся с вами  в течение <span>10 минут</span> и расскажем что нужно для проведения оценки.
+
+    .popup__form.form
+      form(action="" method='post')
+        .form__row
+          .form__field
+            input.form__input(type="text", value="", placeholder="ваше имя")
+          .form__field.form__field_phone
+            input.form__input(type="text", value="", placeholder="номер телефона")
+      
+        input.form__submit.button(type="submit", value="жду звонка")
+
+        .form__privacy Я согласен <a href='#'>с условиями</a> обработки персональных данных
+
+
+mixin popup-trankyou(data)
+  .popup.popup_thankyou&attributes(attributes)
+    h2.popup__title Спасибо за обращение!
+    .popup__text Мы свяжемся с вами в течение <span>10 минут</span> и уточним детали. 
+
+    .popup__form.form
+      input.form__submit.button(type="submit", value="жду звонка")
+              
+                 

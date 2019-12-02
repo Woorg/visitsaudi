@@ -1,0 +1,53 @@
+mixin footer(data)
+  footer.footer
+    .footer__container.container
+      .footer__row.flex.flex_start.flex_top
+        nav.footer__nav.nav.nav_secondary
+          .nav__title О стране
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") История и География
+            li.nav__item
+              a.nav__link(href="#") Культура и Язык
+            li.nav__item
+              a.nav__link(href="#") Климат и Сезоны
+
+
+        nav.footer__nav.nav.nav_secondary
+          .nav__title Чем заняться
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") Города
+            li.nav__item
+              a.nav__link(href="#") Пляжи
+            li.nav__item
+              a.nav__link(href="#") Горы
+
+        nav.footer__nav.nav.nav_secondary
+          .nav__title Календарь событий
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") Экскурсия
+            li.nav__item
+              a.nav__link(href="#") Поездка
+
+        .footer__social.social
+          .social__title Следите за нами
+          ul.social__list
+            li.social__item.social__item_twitter
+              a.social__link(href="#") 
+            li.social__item.social__item_inst
+              a.social__link(href="#") 
+            li.social__item.social__item_fb
+              a.social__link(href="#") 
+
+      .footer__row.flex.flex_start.flex_top
+        a.footer__button.button.button_wth_arrow(href="") Получить визу
+          != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'button__icon', iconWidth: '13', iconHeight: '11'})
+
+        nav.footer__privacy.nav.nav_secondary.nav_privacy
+          ul.nav__list
+            li.nav__item
+              a.nav__link(href="#") Политика конфиденциальности
+            li.nav__item
+              a.nav__link(href="#") Связаться с нами

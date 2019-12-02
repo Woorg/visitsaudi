@@ -1,0 +1,188 @@
+.reviews {
+
+  &__container {
+    padding-top: 75px;
+    padding-bottom: 110px;
+  }
+
+  &__title {
+    margin-top: 27px;
+    margin-bottom: 63px;
+  }
+
+
+  &__slider-w {
+    position: relative;
+    
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 1;
+    bottom: -9px;
+    right: 100px;
+  }
+
+
+  &__count {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+  &__count-sep {
+
+    opacity: 0.54;
+    color: #212121;
+    font-size: 48px;
+    font-weight: 300;
+  }
+
+  &__count-current {
+    margin-top: -49px;
+    color: #2e2d2d;
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  &__count-all {
+    margin-bottom: -32px;
+    opacity: 0.5;
+    color: #212121;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__slider {
+
+
+  }
+
+
+  &__item {
+    
+  }
+
+  &__item-in {
+    
+  }
+
+  &__col {
+    &:last-child {
+      margin-left: -10px;
+      @include mq($medium) {
+        margin-left: 0;
+        padding-bottom: 100px;
+      }
+    }
+  }
+
+  &__images {
+    margin-right: 55px;
+    
+    @include mq($medium) {
+      margin-right: 0;
+      
+    }
+
+
+  }
+
+  &__image {
+    position: relative;
+    font-size: 0;
+    &:first-child {
+      margin-right: 7px;
+      border-radius: 10px 0 0 10px;
+      img {
+        display: block;
+        border-radius: 10px 0 0 10px;
+        
+      }
+
+      .reviews__badge {
+        bottom: -1px;
+        left: 0;
+        @include bg($badge-1);
+        
+
+      }
+
+      .reviews__badge-text {
+        top: auto;
+        left: 25px;
+        bottom: 24px;
+      }
+
+    }
+
+    &:last-child {
+      border-radius: 0 10px 10px 0;
+      img {
+        display: block;
+        border-radius: 0 10px 10px 0;
+      }
+
+      .reviews__badge {
+        top: 0;
+        right: -1px;
+        @include bg($badge-2);
+      }
+
+      .reviews__badge-text {
+        top: 25px;
+        right: 10px;
+        left: auto;
+        bottom: auto;
+      }
+
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    
+  }
+
+  &__badge-text {
+    position: absolute;
+    top: 50%;
+    
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__text {
+    padding-right: 120px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.333;
+  }
+
+
+  .slick-arrow {
+    top: calc(50% - 5px);
+    @include bg($slider-arrow-2)
+    &:before {
+      display: none;
+    }
+
+  }
+  .slick-prev {
+    left: -40px;
+  }
+  .slick-next {
+    right: -41px;
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+}

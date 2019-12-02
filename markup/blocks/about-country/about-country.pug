@@ -1,0 +1,51 @@
+mixin about-country(data)
+  section#about-country.about-country
+    .about-country__container.container
+      .about-country__top.top
+        h1.about-country__title.title О стране
+        .about-country__text.text Все самое важное, что вам нужно знать о Саудовской Аравии — это великая история, а также полезная информация о климате и культуре после прибытия.
+
+      .about-country__tabs.tabs
+        ul.tabs__nav
+          li.tabs__item.active
+            a.tabs__link() История и География
+          li.tabs__item
+            a.tabs__link() Климат и Сезоны
+          li.tabs__item
+            a.tabs__link() Культура и Язык
+
+        .tabs__content
+          .tabs__tab.active
+            .about-country__article.article
+              .article__image
+                img(src="assets/images/content/about-img-1.jpg", alt="")
+              .article__w
+                h2.article__title.title.title_reg История и География
+                .article__text.text
+                  p Саудовская Аравия расположена в Юго-Западной Азии и является одной из крупнейших стран данного региона. Саудовская Аравия граничит с Персидским заливом и Красным морем. Саудовская Аравия вследствие своего расположения богата на нефтяные ресурсы и экспортирует их через Суэцкий канал, и Персидский залив. Королевство занимает 80 % всего Аравийского полуострова.
+                a.article__more.more(href="#") Подробнее
+                  != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .tabs__tab
+            .about-country__article.article
+              .article__image
+                img(src="assets/images/content/about-img-1.jpg", alt="")
+              .article__w
+                h2.article__title.title.title_reg Климат и Сезоны
+                .article__text.text
+                  p Саудовская Аравия расположена в Юго-Западной Азии и является одной из крупнейших стран данного региона. Саудовская Аравия граничит с Персидским заливом и Красным морем. Саудовская Аравия вследствие своего расположения богата на нефтяные ресурсы и экспортирует их через Суэцкий канал, и Персидский залив. Королевство занимает 80 % всего Аравийского полуострова.
+
+                a.article__more.more(href="#") Подробнее
+                  != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})
+
+          .tabs__tab
+            .about-country__article.article
+              .article__image
+                img(src="assets/images/content/about-img-1.jpg", alt="")
+              .article__w
+                h2.article__title.title.title_reg Культура и Язык
+                .article__text.text
+                  p Саудовская Аравия расположена в Юго-Западной Азии и является одной из крупнейших стран данного региона. Саудовская Аравия граничит с Персидским заливом и Красным морем. Саудовская Аравия вследствие своего расположения богата на нефтяные ресурсы и экспортирует их через Суэцкий канал, и Персидский залив. Королевство занимает 80 % всего Аравийского полуострова.
+                
+                a.article__more.more(href="#") Подробнее
+                  != pugHelpers.Icon.call(locals, {iconName: 'arrow-icon', className: 'more__icon', iconWidth: '13', iconHeight: '11'})

@@ -1,0 +1,24 @@
+mixin bottom(data)
+  .bottom(class="uk-flex uk-flex-start uk-flex-wrap")
+    #map.map(class="uk-width-1-1@s uk-width-1-2@m ")
+    .contacts(class="uk-flex uk-flex-start uk-width-1-1@s uk-width-1-2@m ")
+      .contacts__w
+        a.contacts__logo.logo.logo_second(href="#")
+          img(src='assets/images/general/logo.png' srcset='assets/images/general/logo@2x.png 2x, assets/images/general/logo@3x.png 3x' alt="Стомавеню")
+        a.contacts__phone(href="#") +7 (499) 50 100 50
+        .contacts__address Москва, Сытинский переулок, д. 5/10, стр. 3
+
+        .contacts__metro
+          .contacts__metro-title 5 минут пешком от станций метро
+          ul.contacts__metro-list(class="uk-flex ")
+            li.contacts__metro-item Тверская
+            li.contacts__metro-item Пушкинская
+            li.contacts__metro-item Чеховская
+        
+        .contacts__time(class="uk-flex uk-flex-center")
+          .contacts__time-item <span>Пн.-Пт.</span> 9:00-21:00
+          .contacts__time-item <span>Сб.</span> 10:00-20:00
+
+        a.contacts__button.button.button_small(href="#") Записаться на прием
+
+        .contacts__license Лицензия на осуществление медицинской деятельности <br/>номер ЛО-77-01-004794
